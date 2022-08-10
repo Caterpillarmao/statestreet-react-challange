@@ -1,38 +1,116 @@
-.App {
+#root {
   text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ececec;
+  height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+hr.solid {
+  border-top: 1px solid #bbb;
+  width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.site-card-wrapper {
+  height: 100vh;
+  padding: 30px;
+  width: 1280px;
+  background: white;
+}
+.site-header{
+  display: flex;
+  font-weight: bold;
+  font-size: 27px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.site-body {
+  display: flex;
+  margin-top: 30px;
+  margin-left: 5px;
+  flex-direction: row;  
+  height: 100%;
+  width: 100%;
+}
+
+.left-panel {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  width: 190px;
+}
+.filter-header-top {
+  font-weight: bold;
+  font-size: 18px;
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.filter-header {
+  font-weight: bold;
+  font-size: 18px;
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.filter-panel {
+   background:  #ececec;
+   padding:8px;
+   margin-bottom: 10px;
+}
+
+.filter-header {
+  display: flex;
+  font-weight: bold;
+  font-size: 14px;
+  margin-left: 4px;
+}
+
+.filter-item {
+  display: flex;
+  margin-bottom: 3px;
+  font-size: 14px;
+}
+
+.filter-item-name {
+  text-align: left;
+}
+  
+.right-panel {
+  width: 100%;
+  margin-left: 20px;
+}
+
+.ag-theme-alpine {
+  width: 100%;
+  height: 100%;
+}
+.ag-header-cell-label {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.transaction-details {
+  width: 1280px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.transaction-detail-item {
+  display: flex;
+  margin-top: 10px;
+}
+
+.transaction-detail-item div {
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.transaction-detalis-header {
+  display: flex;
 }
